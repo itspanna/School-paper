@@ -8,9 +8,9 @@ namespace Database
 {
     internal class Program
     {
-        static void Kiir(IEnumerable<object> szemelyek)
+        static void Kiir(IEnumerable<object> szemely)
         {
-            foreach (var item in szemelyek)
+            foreach (var item in szemely)
             {
                 Console.WriteLine(item);
             }
@@ -22,7 +22,7 @@ namespace Database
 
             if (!db.People.Any())
             {
-                var sorok = File.ReadAllLines(@"\Database\5.csv").Skip(1);
+                var sorok = File.ReadAllLines(@"\Database\2.csv").Skip(1);
                 foreach (var line in sorok)
                 {
                     db.People.Add(new People(line));

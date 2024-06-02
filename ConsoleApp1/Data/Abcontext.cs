@@ -18,7 +18,7 @@ namespace Database.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MsSqlLocalDb;Database=Benedek;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MsSqlLocalDb;Database=Panna;Trusted_Connection=true");
         }
     }
 }

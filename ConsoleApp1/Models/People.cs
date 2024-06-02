@@ -56,13 +56,13 @@ namespace Database.Models
             }
         }
 
-        private string hobby;
-        public string Hobby
+        private string date;
+        public string Date
         {
-            get { return hobby; }
+            get { return Date; }
             set
             {
-                hobby = value;
+                Date = value;
                 OnPropertyChanged();
             }
         }
@@ -78,22 +78,22 @@ namespace Database.Models
             Age = age;
             City = city;
             Position = position;
-            Hobby = hobby;
+            Date = date;
         }
 
         public People(string sor)
         {
-            string[] t = sor.Split(';');
+            string[] t = sor.Split(',');
             Name = t[0];
             Age = t[1];
             City = t[2];
             Position = t[3];
-            Hobby = t[4];
+            Date = t[4];
         }
 
         public override string? ToString()
         {
-            return $"{Name}, neve a(z) {City} városban lakik, {Position}-ként dolgozik, {Age} éves, hobbija: {Hobby}.";
+            return $"{Name}, {Age}, {City}, {Position}, {Date}.";
         }
 
         private void OnPropertyChanged([CallerMemberName] string name = null)

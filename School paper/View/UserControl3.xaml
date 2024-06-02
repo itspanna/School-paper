@@ -39,8 +39,8 @@
                     <TextBlock Text="Position" FontSize="24" Margin="20"/>
                     <TextBox x:Name="positionTextBox" Background="#f8b88b" FontSize="24" Padding="0,10" Margin="10"/>
 
-                    <TextBlock Text="Hobby" FontSize="24" Margin="20"/>
-                    <TextBox x:Name="hobbyTextBox" Background="#f8b88b" FontSize="24" Padding="0,10" Margin="10"/>
+                    <TextBlock Text="Date" FontSize="24" Margin="20"/>
+                    <TextBox x:Name="dateTextBox" Background="#f8b88b" FontSize="24" Padding="0,10" Margin="10"/>
                 </StackPanel>
             </ScrollViewer>
 

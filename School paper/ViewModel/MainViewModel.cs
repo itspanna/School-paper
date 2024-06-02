@@ -28,7 +28,7 @@ namespace School_paper.ViewModel
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        public Relaycommand openHome { get; }
+        public Relaycommand OpenHome { get; }
         public Relaycommand TaskOneView { get; }
         public Relaycommand DataView { get; }
 
@@ -38,7 +38,7 @@ namespace School_paper.ViewModel
             taskOneView = new TaskOneView();
             dataView = new DataView();
 
-            openHome = new Relaycommand(X => CurrentView = homeView);
+            OpenHome = new Relaycommand(X => CurrentView = homeView);
             TaskOneView = new Relaycommand(X => CurrentView = taskOneView);
             DataView = new Relaycommand(X => CurrentView = dataView);
 
